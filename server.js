@@ -29,4 +29,4 @@ app.get("/", (req,res) => {
     res.send('Home page')
 })
 
-app.listen(port, (err) => err ? console.log(err) : console.log("Listening at port 3002"));
+app.listen(port, (err) => err ? console.log(err) : console.log("Listening at port " + port));
