@@ -7,7 +7,7 @@ const admin = require('./routers/admin');
 const cases = require('./routers/case');
 const device = require('./routers/device');
 // Declare a port
-const port = 3002;
+const port = process.env.PORT || 3002;
 
 
 
