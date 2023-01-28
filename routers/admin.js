@@ -27,7 +27,6 @@ router.post('/new', async (req, res) => {
         password: req.body.password,
     }
 
-    console.log(user);
     // Test duplicated id
     const duplicateID = await conn.query("SELECT * FROM admins WHERE admin_id = ($1);", [user.id]);
     if(duplicateID.rows[0] !== undefined) return res.send('Duplicate id');

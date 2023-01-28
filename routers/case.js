@@ -13,7 +13,7 @@ router.get("/", function (req, res) {
 });
 
 // POST method to stored a new case
-router.post("/new/case", (req,res) => {
+router.post("/new", (req,res) => {
     
 })
 
